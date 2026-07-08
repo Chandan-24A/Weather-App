@@ -73,53 +73,6 @@ Weather-App/
 
 ---
 
-## ⚙️ Installation
-
-### Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Weather-App.git
-```
-
-### Navigate into the project
-
-```bash
-cd Weather-App
-```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Create a `.env` file
-
-```env
-API_KEY=YOUR_OPENWEATHER_API_KEY
-API_URL=https://api.openweathermap.org/data/2.5/weather
-```
-
-### Run the application
-
-```bash
-npm start
-```
-
-Visit:
-
-```
-http://localhost:3000
-```
-
----
-
-## 🚀 Live Demo
-
-👉 https://weather-app-nbvb.onrender.com
-
----
-
 ## 📖 What I Learned
 
 This project helped me understand:
@@ -132,18 +85,6 @@ This project helped me understand:
 - Parsing and displaying JSON data from APIs.
 - Deploying full-stack applications on **Render**.
 - Improving UI using HTML and CSS.
-
----
-
-## 🔮 Future Improvements
-
-- 📍 Detect user's current location using the Geolocation API.
-- 🔍 Search weather using city names.
-- 🌡️ Toggle between Celsius and Fahrenheit.
-- 📅 Display a 5-day weather forecast.
-- 🌙 Add Dark Mode.
-- 📱 Improve mobile responsiveness.
-- 🎞️ Add loading animations and better error handling.
 
 ---
 
