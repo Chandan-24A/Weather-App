@@ -73,7 +73,7 @@ Weather-App/
 
 ---
 
-## 📖 What I Learned
+##  What I Learned
 
 This project helped me understand:
 
@@ -88,14 +88,14 @@ This project helped me understand:
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - OpenWeather API for providing real-time weather data.
 - Render for hosting the application.
 
 ---
 
-## 📬 Feedback
+##  Feedback
 
 If you have any suggestions or feedback, feel free to open an issue or connect with me on GitHub.
 
