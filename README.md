@@ -65,7 +65,7 @@ Weather-App/
 ├── views/
 │   └── index.ejs
 │
-├── app.js
+├── index.js
 ├── package.json
 ├── .env.example
 └── README.md
