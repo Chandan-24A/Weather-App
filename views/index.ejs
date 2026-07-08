@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Weather At Location</title>
+</head>
+<body>
+    <%if(!locals.lat && !locals.long){%>
+    <h1>Welcome To Weather App</h1>
+    <h2>Know Weather Of Your Location To Plan Your Activities</h2>
+
+    <h3 class="main">Enter the latitude and longnitude of your current Location</h3>
+    <div class="format">
+    <form method="POST" action="/">
+        <label for="latitudeinput">latitude:</label><br>
+        <input type="text" name="latitude" id="latitudeinput" placeholder="Enter the latitude" required><br>
+
+        <label for="longnitudeinput">longnitude:</label><br>
+        <input type="text" name="longnitude" id="longnitudeinput" placeholder="Enter the longnitude" required> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <% }else if(!locals.lat || !locals.long){ %>
+        <div class="format">
+          <h3>Enter Both latitude and longnitude</h3>
+          <form method="POST" action="/">   
+          <label for="latitudeinput">latitude:</label><br>
+          <input type="text" name="latitude" id="latitudeinput" placeholder="Enter the latitude" required><br>
+
+          <label for="longnitudeinput">longnitude:</label><br>
+          <input type="text" name="longnitude" id="longnitudeinput" placeholder="Enter the longnitude" required     > <br>
+
+          <button type="submit">Submit</button>
+        </div>
+    </form>
+    <% }else{ %>
+        <div class="res">
+          <h2>Current Weather Data:</h2>
+          <br/>
+          <p>📍Location: <%= data.name %></p>
+          <img src="<%= icon %>" alt="Weather icon">
+          <p>🌡 Current Temperature: <%= data.main.temp %>°C</p>
+          <br/>
+          <p>Weather Condition: <%= data.weather[0].main %></p>
+          <p>Weather Description: <%= data.weather[0].description %></p>
+          <br/> 
+          
+          <p>🤒 Feels Like: <%= data.main.feels_like %>°C</p>
+          <p>Minimum Temperature: <%= data.main.temp_min %>°C</p>
+          <p>Maximum Temperature: <%= data.main.temp_max %>°C</p>
+          <p>💧Humidity: <%= data.main.humidity %>%</p>
+          <p>📈 Pressure: <%= data.main.pressure %> hPa</p>
+          <p>🌬 Wind Speed: <%= data.wind.speed %> m/s</p>
+          <p>👁 visibility: <%= data.visibility/1000 %> Km</p>
+          <br/>
+
+          <p>🌅 Sunrise: <%= sunrise %></p>
+          <p>🌇 Sunset: <%= sunset %></p>
+          <br/>
+          <p>Last Updated</p>
+          <p><%= updated %></p>
+          
+          <a href="/" class="btn">Check Again</a>
+        </div>
+    <% } %>
+
+</body>
+</html>
