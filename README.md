@@ -60,7 +60,7 @@ A simple and responsive **Weather Application** built using **Node.js, Express.j
 Weather-App/
 │
 ├── public/
-│   └── styles/
+│   └── style. css
 │
 ├── views/
 │   └── index.ejs
